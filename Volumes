@@ -1,0 +1,16 @@
+2014  docker volume create mysql-data
+ 2015  docker run -d   --name mysql1   -e MYSQL_ROOT_PASSWORD=1234   -v mysql-data:/var/lib/mysql   -p 3306:3306   mysql:latest
+ 2016  docker ps
+ 2017  docker run -d -e MYSQL_ROOT_PASSWORD=1234 -v mysql-data:/ninja -P mysql
+ 2018  docker ps
+ 2019  docker kill mysql1 
+ 2020  docker ps
+ 2021  docker ecex -it clever_brown /bin/sh -c 'ls'
+ 2022  docker exec -it clever_brown /bin/sh -c 'ls'
+ 2023  docker exec -it clever_brown /bin/sh -c 'touch /ninja/foo'
+ 2024  docker exec -it clever_brown /bin/sh -c 'ls /ninja'
+ 2025  docker kill clever_brown 
+ 2026  docker ps
+ 2027  docker run -d -e MYSQL_ROOT_PASSWORD=1234 -v mysql-data:/ninja -P mysql
+ 2028  docker ps
+ 2029  docker exec -it affectionate_elbakyan /bin/sh -c 'ls /ninja'

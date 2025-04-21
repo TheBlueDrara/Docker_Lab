@@ -1,0 +1,15 @@
+ 1993  docker network create vaio-net
+ 1994  docker run -itd --network vaio-net alpine
+ 1995  docker run -itd --network vaio-net nginx
+ 1996  docker run -itd apache2
+ 1997  docker run -itd ubuntu/apache2
+ 1998  docker ps
+ 1999  docker inspect 872a97d8b96a
+ 2000  docker exec -it 0105ea19ce9b ping 172.17.0.2
+ 2001  docker ps
+ 2002  docker exec -it infallible_ishizaka ping 172.17.0.2
+ 2003  docker network connect vaio-net sleepy_heyrovsky 
+ 2004  docker inspect sleepy_heyrovsky 
+ 2006  docker exec -it infallible_ishizaka ping 172.18.0.4
+ 2007  docker rm -f $(docker ps -q)
+ 2008  docker network rm vaio-net 
