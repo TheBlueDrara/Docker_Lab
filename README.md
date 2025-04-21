@@ -7,12 +7,12 @@ Dear users, you can find a small docker lab about docker networking, volumes and
 
 ## TASK
 
-[TASK.md](task)
+You can find it [here](TASK.md)
 
 
 
 ## Contributors
-[CONTRIBUTORS.md](contributors)
+You can find it [here](CONTRIBUTORS.md)
 
 
 ### Daily WarHammer40K quote
